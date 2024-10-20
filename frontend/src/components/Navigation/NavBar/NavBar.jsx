@@ -1,4 +1,5 @@
 import { useEffect, useState, useRef } from "react";
+import {Link} from "react-router-dom"
 
 const dropdownNavs = [
     {
@@ -203,7 +204,7 @@ const NavBar = () => {
     const navigation = [
         {
             title: "Screenplay",
-            path: "javascript:void(0)",
+            path: "/",
             isDrapdown: true,
             navs: dropdownNavs,
         },
@@ -281,7 +282,9 @@ const NavBar = () => {
                                                     })
                                                 }
                                             >
-                                                {item.title}
+                                                <Link to={item.path}>
+                                                    {item.title}
+                                                </Link>
                                             </button>
                                         ) : (
                                             <a
