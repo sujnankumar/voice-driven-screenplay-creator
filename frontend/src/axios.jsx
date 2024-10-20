@@ -1,7 +1,7 @@
-import axios from 'axios'; // Import axios from the axios package
+import axios from 'axios';
 
 const axiosInstance = axios.create({
-  baseURL: process.env.REACT_APP_API_BASE_URL || 'http://localhost:5000', // Use environment variable for baseURL
+  baseURL: 'http://127.0.0.1:5000',  
   withCredentials: true,
 });
 
@@ -21,8 +21,8 @@ axiosInstance.interceptors.response.use(
   (error) => {
     if (error.response && error.response.status === 401) {
       const currentPath = window.location.pathname;
-      if (currentPath !== '/register') {
-        window.location.href = '/register';
+      if (currentPath !== '/login' && currentPath !== '/signup') {
+        window.location.href = '/login';
       }
     }
     return Promise.reject(error);
