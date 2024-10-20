@@ -6,6 +6,8 @@ import Chatbot from "./components/Chatbot/Chatbot";
 import NoPage from "./components/NoPage/NoPage"
 import NewMovie from "./components/NewMovie/NewMovie"
 import Senti from "./components/Senti/SentimentAnalysis"
+import LogIn from "./components/Auth/Login";
+import SignUp from "./components/Auth/SignUp";
 
 function App() {
   return (
@@ -17,6 +19,8 @@ function App() {
             <Route path="/chatbot" element={<Chatbot />} />
             <Route path="/create" element={<NewMovie />} />
             <Route path="/senti" element={<Senti />} />
+            <Route path="/login" element={<LogIn />} />
+            <Route path="/signup" element={<SignUp />} />
             <Route path="*" element={<NoPage />} />
           </Route>
         </Routes>
