@@ -5,6 +5,7 @@ import Home from "./components/Home/Home";
 import Chatbot from "./components/Chatbot/Chatbot";
 import NoPage from "./components/NoPage/NoPage"
 import NewMovie from "./components/NewMovie/NewMovie"
+import Senti from "./components/Senti/SentimentAnalysis"
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
             <Route index element={<Home />} />
             <Route path="/chatbot" element={<Chatbot />} />
             <Route path="/create" element={<NewMovie />} />
+            <Route path="/senti" element={<Senti />} />
             <Route path="*" element={<NoPage />} />
           </Route>
         </Routes>
