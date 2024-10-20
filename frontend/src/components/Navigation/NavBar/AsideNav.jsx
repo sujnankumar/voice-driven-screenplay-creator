@@ -7,7 +7,12 @@ import {
     Building2,
     LifeBuoy,
     Settings,
-    Banana,
+    Clapperboard,
+    FileVideo,
+    Film,
+    Videotape,
+    Popcorn,
+    CreditCard
 } from "lucide-react";
 import Sidebar, { SidebarItem } from "./Sidebar";
 
@@ -17,35 +22,35 @@ const AsideNav = () => {
             <div className="flex">
                 <Sidebar>
                     <SidebarItem
-                        icon={<Banana size={20} />}
-                        text="Home"
+                        icon={<Film size={20} />}
+                        text="Scenes"
                         location="/"
                     />
                     <SidebarItem
-                        icon={<BriefcaseBusiness size={20} />}
-                        text="Jobs"
+                        icon={<Film size={20} />}
+                        text="Scenes"
                         location="/jobs"
                     />
                     <SidebarItem
-                        icon={<MessageSquareMore size={20} />}
-                        text="Messaging"
+                        icon={<Film size={20} />}
+                        text="Scenes"
                         location="/messaging"
                         active={true}
                     />
                     <SidebarItem
-                        icon={<Bell size={20} />}
-                        text="Notifications"
+                        icon={<Film size={20} />}
+                        text="Scenes"
                         location="/notifications"
                         batch
                     />
                     <SidebarItem
-                        icon={<Users size={20} />}
-                        text="Connections"
+                        icon={<Film size={20} />}
+                        text="Scenes"
                         location="/connections"
                     />
                     <SidebarItem
-                        icon={<Building2 size={20} />}
-                        text="Companies"
+                        icon={<Film size={20} />}
+                        text="Scenes"
                         location="/companies"
                     />
                     <hr className="my-3" />
