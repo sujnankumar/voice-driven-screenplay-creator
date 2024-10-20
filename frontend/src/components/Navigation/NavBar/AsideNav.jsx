@@ -1,18 +1,7 @@
 import {
-    Home,
-    BriefcaseBusiness,
-    MessageSquareMore,
-    Bell,
-    Users,
-    Building2,
     LifeBuoy,
     Settings,
-    Clapperboard,
-    FileVideo,
     Film,
-    Videotape,
-    Popcorn,
-    CreditCard
 } from "lucide-react";
 import Sidebar, { SidebarItem } from "./Sidebar";
 
@@ -41,7 +30,6 @@ const AsideNav = () => {
                         icon={<Film size={20} />}
                         text="Scenes"
                         location="/notifications"
-                        batch
                     />
                     <SidebarItem
                         icon={<Film size={20} />}
