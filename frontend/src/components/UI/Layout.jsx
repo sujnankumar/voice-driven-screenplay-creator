@@ -1,13 +1,17 @@
 import { Outlet, Link } from "react-router-dom";
 import NavBar from "../Navigation/NavBar/NavBar";
-import SideBar from "../Navigation/Sidebar/Sidebar";
+import SideBar from "../Navigation/NavBar/AsideNav";
 
 const Layout = () => {
   return (
     <>
       <NavBar />
-      <SideBar />
-      <Outlet />
+      <div className="flex">
+        <SideBar />
+        <div className="mt-12 overflow-y-scroll h-screen overflow-hidden w-full">
+          <Outlet />
+        </div>
+      </div>
     </>
   );
 };
