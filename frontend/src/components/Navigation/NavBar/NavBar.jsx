@@ -224,7 +224,7 @@ const NavBar = () => {
                     state ? "shadow-lg lg:shadow-none" : ""
                 }`}
             >
-                <div className="items-center gap-x-5 px-2 max-w-screen-xl mx-auto lg:flex lg:px-4">
+                <div className="items-center gap-x-5 py-1 px-2 mx-auto lg:flex lg:px-4">
                     <div className="flex items-center justify-between py-2 lg:py-3 lg:block">
                         <div className="lg:hidden">
                             <button
@@ -272,7 +272,7 @@ const NavBar = () => {
                                     <li key={idx}>
                                         {item.isDrapdown ? (
                                             <button
-                                                className="w-full flex items-center justify-between gap-1 text-purple text-xl font-bold hover:text-purpleLogo"
+                                                className="w-full flex items-center text-2xl justify-between gap-1 text-purple font-bold hover:text-purpleLogo"
                                                 onClick={() =>
                                                     setDrapdownState({
                                                         idx,
