@@ -8,7 +8,7 @@ const Layout = () => {
       <NavBar />
       <div className="flex">
         <SideBar />
-        <div className="mt-12 overflow-y-scroll h-screen overflow-hidden w-full">
+        <div className="mt-12 relative overflow-y-scroll h-screen overflow-hidden w-full">
           <Outlet />
         </div>
       </div>
